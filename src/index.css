@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #0E0E11;
+}
+
+/* Custom animations for testimonials */
+
+/* Masks for fading edges */
+.testimonial-mask {
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  }
+  
+  /* Basic shared styles for scroll containers */
+  .testimonial-scroll,
+  .testimonial-scroll-reverse {
+    display: flex;
+    width: max-content;
+    flex-wrap: nowrap;
+  }
+  
+  /* Forward scroll animation */
+  .testimonial-scroll {
+    animation: scroll 50s linear infinite;
+  }
+  
+  /* Reverse scroll animation */
+  .testimonial-scroll-reverse {
+    animation: scrollReverse 50s linear infinite;
+  }
+  
+  /* Pause animation on hover */
+  .testimonial-scroll:hover,
+  .testimonial-scroll-reverse:hover {
+    animation-play-state: paused;
+  }
+  
+  /* Keyframes for forward scroll */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  /* Keyframes for reverse scroll */
+  @keyframes scrollReverse {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Optimize animations for performance */
+  .testimonial-scroll,
+  .testimonial-scroll-reverse {
+    will-change: transform;
+    backface-visibility: hidden;
+  }
