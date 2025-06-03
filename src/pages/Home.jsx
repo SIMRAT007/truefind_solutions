@@ -24,7 +24,7 @@ const Home = () => {
     <Portfolio/>
     <Services/>
     <ValuesSection/>
-    <Pricing/>
+    {/* <Pricing/> */}
     <Testimonial/>
     <CTA/>
     <Faq/>
