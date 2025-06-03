@@ -30,7 +30,7 @@ export default function Footer() {
               <li><a onClick={() => scrollToSection('about')} className="cursor-pointer hover:text-[#2E81CC]">About us</a></li>
               <li><a onClick={() => scrollToSection('portfolio')} className="cursor-pointer hover:text-[#2E81CC]">Portfolio</a></li>
               <li><a onClick={() => scrollToSection('services')} className="cursor-pointer hover:text-[#2E81CC]">Services</a></li>
-              <li><a onClick={() => scrollToSection('pricing')} className="cursor-pointer hover:text-[#2E81CC]">Pricing</a></li>
+              {/* <li><a onClick={() => scrollToSection('pricing')} className="cursor-pointer hover:text-[#2E81CC]">Pricing</a></li> */}
             </ul>
           </div>
 

@@ -83,14 +83,14 @@ const Navbar = () => {
                 Services
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 onClick={() => scrollToSection('pricing')}
                 className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#pricing' ? 'text-[#2E81CC]' : ''}`}
               >
                 Pricing
               </a>
-            </li>
+            </li> */}
           </ul>
 
           {/* Button */}
@@ -182,14 +182,14 @@ const Navbar = () => {
                Services
               </a>
           </li>
-          <li>
+          {/* <li>
           <a
                 onClick={() => scrollToSection('pricing')}
                 className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#pricing' ? 'text-[#2E81CC]' : ''}`}
               >
              Pricing
               </a>
-          </li>
+          </li> */}
 
 
 
