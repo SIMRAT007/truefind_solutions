@@ -36,7 +36,7 @@ const Navbar = () => {
             <img
               src={Logo}
               alt="TrueFind Logo"
-              className="h-16 w-28 brightness-0 invert"
+              className="h-18 w-30 brightness-0 invert"
               style={{ filter: 'brightness(0) invert(1)' }}
             />
             {/* <span className="font-bold text-xl">TrueFind</span> */}
@@ -50,7 +50,7 @@ const Navbar = () => {
             </div> */}
 
           {/* Desktop Navigation Links */}
-          <ul className="hidden md:flex space-x-8 text-xl">
+          <ul className="hidden md:flex space-x-8 text-xl mr-10">
             <li>
             <a
                 onClick={() => scrollToSection('home')}
@@ -94,7 +94,7 @@ const Navbar = () => {
           </ul>
 
           {/* Button */}
-          <div className="hidden md:flex items-center">
+          {/* <div className="hidden md:flex items-center">
           <a
                 onClick={() => scrollToSection('contacts')}
                 className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#contacts' ? 'text-[#2E81CC]' : ''}`}
@@ -103,7 +103,7 @@ const Navbar = () => {
                 Contact Us
               </button>
               </a>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">

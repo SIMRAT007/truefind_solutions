@@ -11,7 +11,7 @@ import CTA from '../components/Cta'
 import Footer from '../components/Footer'
 import Contact from '../components/Contact'
 import Location from '../components/Location'
-import Pricing from '../components/Pricing'
+// import Pricing from '../components/Pricing'
 import Faq from '../components/Faq'
 
 const Home = () => {
@@ -25,11 +25,11 @@ const Home = () => {
     <Services/>
     <ValuesSection/>
     {/* <Pricing/> */}
-    <Testimonial/>
+    {/* <Testimonial/> */}
     <CTA/>
-    <Faq/>
+    {/* <Faq/> */}
     <Contact/>
-    <Location/>
+    {/* <Location/> */}
     <Footer/>
     </>
   )

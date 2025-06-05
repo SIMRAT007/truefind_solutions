@@ -14,7 +14,7 @@ export default function CTA() {
   return (
     <section
       ref={contactRef}
-      className="relative w-full h-[90vh] bg-cover bg-center flex items-center justify-center text-white overflow-hidden"
+      className="relative w-full h-[100vh] bg-cover bg-center flex items-center justify-center text-white overflow-hidden"
       style={{ backgroundImage: `url('https://www.netscribes.com/wp-content/uploads/2020/04/Company-Analysis.webp')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black/90 to-black/70"></div>

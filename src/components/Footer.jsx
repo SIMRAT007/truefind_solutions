@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
 
           {/* Follow Us */}
-          <div>
+          {/* <div>
             <h3 className="text-sm font-semibold text-[#2E81CC] mb-4">FOLLOW US</h3>
             <div className="flex space-x-4 text-lg">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="">Instagram</a>
@@ -55,10 +55,8 @@ export default function Footer() {
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="">Facebook</a>
               <span className="text-gray-500">|</span>
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="">Youtube</a>
-              <span className="text-gray-500">|</span>
-              {/* <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="">Whatsapp</a> */}
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Divider */}
