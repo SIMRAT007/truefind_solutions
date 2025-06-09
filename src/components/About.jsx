@@ -26,7 +26,7 @@ const AboutUs = () => {
       </div>
 
       {/* Headline */}
-      <h2 className="text-3xl md:text-4xl lg:text-7xl font-bold leading-tight mb-10 max-w-5xl">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-10 max-w-4xl">
         We are an experienced Managed IT services provider delivering comprehensive
         technical solutions to small and medium businesses
       </h2>

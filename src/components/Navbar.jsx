@@ -28,33 +28,25 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="text-white max-md:text-black z-100">
-      <div className="md:backdrop-filter backdrop-blur bg-opacity-80 p-1 shadow-lg z-50 md:w-[95%] md:mx-auto md:mt-10 md:rounded-2xl fixed mx-auto top-0 left-0 right-0 md:border-2 border-gray-300 max-md:bg-gradient-to-t from-[#0E0E12] to-[#0E0E12] max-md:px-4">
+    <nav className="text-black max-md:text-black z-100 absolute w-full top-0 left-0 right-0">
+      <div className="md:backdrop-filter md:bg-white p-1 shadow-lg z-50 md:w-[95%] md:mx-auto md:mt-10 md:rounded-2xl mx-auto top-0 left-0 right-0 max-md:bg-white max-md:px-4">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo and Logo Name */}
-          <div className="flex items-center space-x-2 max-md:bg-[#0E0E10] rounded-full p-2 text-white">
+          <div className="flex items-center space-x-2 max-md:bg-transparent rounded-full p-2">
             <img
               src={Logo}
               alt="TrueFind Logo"
-              className="h-18 w-30 brightness-0 invert"
-              style={{ filter: 'brightness(0) invert(1)' }}
+              className="h-23 w-36"
             />
             {/* <span className="font-bold text-xl">TrueFind</span> */}
           </div>
 
-          {/* <div className="flex items-center space-x-2 p-2 text-white relative">
-            <div className="absolute -inset-1 rounded-full bg-[#2E81CC]/30 blur-md"></div>
-            <div className="relative flex items-center space-x-2">
-              <img src={Logo} alt="TrueFind Logo" className="h-10 w-10" />
-              <span className="font-bold text-xl">TrueFind</span>
-            </div> */}
-
           {/* Desktop Navigation Links */}
-          <ul className="hidden md:flex space-x-8 text-xl mr-10">
+          <ul className="hidden md:flex space-x-8 text-xl mr-10 text-black">
             <li>
             <a
                 onClick={() => scrollToSection('home')}
-                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#home' ? 'text-[#2E81CC]' : ''}`}
+                className={`hover:text-red-600 cursor-pointer ${location.hash === '#home' ? 'text-red-600' : 'text-black'}`}
               >
                 Home
               </a>
@@ -62,7 +54,7 @@ const Navbar = () => {
             <li>
               <a
                 onClick={() => scrollToSection('about')}
-                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#about' ? 'text-[#2E81CC]' : ''}`}
+                className={`hover:text-red-600 cursor-pointer ${location.hash === '#about' ? 'text-red-600' : 'text-black'}`}
               >
                 About Us
               </a>
@@ -70,7 +62,7 @@ const Navbar = () => {
             <li>
               <a
                 onClick={() => scrollToSection('portfolio')}
-                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#portfolio' ? 'text-[#2E81CC]' : ''}`}
+                className={`hover:text-red-600 cursor-pointer ${location.hash === '#portfolio' ? 'text-red-600' : 'text-black'}`}
               >
                 Portfolio
               </a>
@@ -78,7 +70,7 @@ const Navbar = () => {
             <li>
               <a
                 onClick={() => scrollToSection('services')}
-                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#services' ? 'text-[#2E81CC]' : ''}`}
+                className={`hover:text-red-600 cursor-pointer ${location.hash === '#services' ? 'text-red-600' : 'text-black'}`}
               >
                 Services
               </a>
@@ -93,23 +85,11 @@ const Navbar = () => {
             </li> */}
           </ul>
 
-          {/* Button */}
-          {/* <div className="hidden md:flex items-center">
-          <a
-                onClick={() => scrollToSection('contacts')}
-                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#contacts' ? 'text-[#2E81CC]' : ''}`}
-              >
-              <button className="bg-[#2E81CC] text-white px-4 py-3 px-10 rounded hover:bg-white rounded-full text-lg cursor-pointer border-2 border-[#2E81CC] hover:border-white hover:text-[#2E81CC] transition duration-300 ease-in-out">
-                Contact Us
-              </button>
-              </a>
-          </div> */}
-
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(true)}
-              className="text-4xl text-white"
+              className="text-4xl text-black"
             >
               ☰
             </button>
@@ -127,20 +107,20 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-64 bg-[#0E0E12] text-white transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed top-0 right-0 h-full w-64 bg-white text-black transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           } transition-transform duration-300 ease-in-out z-50`}
       >
         {/* Header Section with Logo and Cancel Button */}
-        <div className="flex justify-between items-center p-4 border-b border-gray-700 text-white">
+        <div className="flex justify-between items-center p-4 border-b border-gray-200 text-black">
           <div className="flex items-center space-x-2">
-            <NavLink to="/" className="text-xl font-bold" onClick={handleCloseMenu}>
+            <NavLink to="/" className="text-xl font-bold text-black" onClick={handleCloseMenu}>
               TRUEFIND SOLUTIONS
             </NavLink>
           </div>
 
           <button
             onClick={handleCloseMenu}
-            className="text-2xl text-white"
+            className="text-2xl text-black"
           >
             ✖
           </button>
@@ -151,7 +131,7 @@ const Navbar = () => {
           <li>
           <a
                 onClick={() => scrollToSection('home')}
-                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#home' ? 'text-[#2E81CC]' : ''}`}
+                className={`hover:text-red-600 cursor-pointer ${location.hash === '#home' ? 'text-red-600' : 'text-black'}`}
               >
                 Home
               </a>
@@ -159,17 +139,15 @@ const Navbar = () => {
           <li>
           <a
                 onClick={() => scrollToSection('about')}
-                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#about' ? 'text-[#2E81CC]' : ''}`}
+                className={`hover:text-red-600 cursor-pointer ${location.hash === '#about' ? 'text-red-600' : 'text-black'}`}
               >
                 About Us
               </a>
           </li>
-          
-
           <li>
           <a
                 onClick={() => scrollToSection('portfolio')}
-                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#portfolio' ? 'text-[#2E81CC]' : ''}`}
+                className={`hover:text-red-600 cursor-pointer ${location.hash === '#portfolio' ? 'text-red-600' : 'text-black'}`}
               >
                 Portfolio
               </a>
@@ -177,7 +155,7 @@ const Navbar = () => {
           <li>
           <a
                 onClick={() => scrollToSection('services')}
-                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#services' ? 'text-[#2E81CC]' : ''}`}
+                className={`hover:text-red-600 cursor-pointer ${location.hash === '#services' ? 'text-red-600' : 'text-black'}`}
               >
                Services
               </a>
@@ -197,9 +175,9 @@ const Navbar = () => {
             {/* <NavLink to="/contact" onClick={handleCloseMenu}> */}
             <a
                 onClick={() => scrollToSection('contacts')}
-                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#contacts' ? 'text-[#2E81CC]' : ''}`}
+                className={`hover:text-red-600 cursor-pointer ${location.hash === '#contacts' ? 'text-red-600' : 'text-black'}`}
               >
-              <button className="bg-[#2E81CC] text-gray-800 px-4 py-2 rounded hover:bg-red-500">
+              <button className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
                 Contact Us
               </button>
             </a>
