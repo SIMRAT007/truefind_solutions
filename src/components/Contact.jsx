@@ -3,7 +3,10 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <section className="relative z-10 py-5 lg:py-[120px] container mx-auto text-white max-md:px-10" id="contacts">
+      <section
+        className="relative z-10 py-5 lg:py-[120px] container mx-auto text-white max-md:px-10"
+        id="contacts"
+      >
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -13,8 +16,7 @@ const Contact = () => {
                   CONTACT US
                 </span>
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-white sm:text-[40px] lg:text-[36px] xl:text-[40px] leading-tight">
-                  GET IN TOUCH{" "}
-                  <span className="text-[#2E81CC]">WITH US</span>
+                  GET IN TOUCH <span className="text-[#2E81CC]">WITH US</span>
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-gray-300">
                   Have a project in mind or just want to say hello? We'd love to
@@ -41,7 +43,8 @@ const Contact = () => {
                       Our Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                      3891 Ranchview Dr. Richardson, <br />
+              California 62639
                     </p>
                   </div>
                 </div>
@@ -80,7 +83,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                       Phone Number
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-body-color dark:text-dark-6 transition duration-200 hover:scale-105 hover:text-[#2E81CC] cursor-pointer">
                       +1-780-851-0652 | +44-770-3101-853
                     </p>
                   </div>
@@ -105,7 +108,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                       Email Address
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-body-color dark:text-dark-6 transition duration-200 hover:scale-105 hover:text-[#2E81CC] cursor-pointer">
                       info@truefindsolutions.com
                     </p>
                   </div>
