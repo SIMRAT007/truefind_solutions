@@ -43,8 +43,8 @@ const Contact = () => {
                       Our Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      3891 Ranchview Dr. Richardson, <br />
-              California 62639
+                      4803 87 St NW, Edmonton, AB <br />
+                      T6E 0V3
                     </p>
                   </div>
                 </div>

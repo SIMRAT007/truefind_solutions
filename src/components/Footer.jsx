@@ -38,8 +38,8 @@ export default function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-[#2E81CC] mb-4">OFFICE</h3>
             <p className="text-lg mb-2">
-              3891 Ranchview Dr. Richardson, <br />
-              California 62639
+              4803 87 St NW, Edmonton, AB <br />
+              T6E 0V3
             </p>
             <p className="text-lg flex items-center gap-2 mt-2">
               📱 +1-780-851-0652 | +44-770-3101-853
