@@ -41,9 +41,11 @@ export default function CTA() {
         <p className="text-xl text-gray-200 mb-10 max-w-2xl mx-auto leading-relaxed">
           Empowering brands with innovative designs and tailored strategies to thrive and grow in the ever-evolving digital landscape.
         </p>
+        <a href="#contacts" >
         <button className="bg-gradient-to-r from-[#2E81CC] to-[#1a5c9a] hover:from-[#3690de] hover:to-[#2167ad] text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-[#2E81CC]/30 transform hover:-translate-y-1 transition-all duration-300 cursor-pointer">
           Ask for Quotations
         </button>
+        </a>
       </div>
     </section>
   );

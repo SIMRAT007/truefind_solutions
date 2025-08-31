@@ -6,32 +6,32 @@ const Portfolio = () => {
     {
       id: 1,
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3",
-      link: "https://example.com/project1"
+      link: ""
     },
     {
       id: 2,
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3",
-      link: "https://example.com/project2"
+      link: ""
     },
     {
       id: 3,
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3",
-      link: "https://example.com/project3"
+      link: ""
     },
     {
       id: 4,
       image: "https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=2366&auto=format&fit=crop&ixlib=rb-4.0.3",
-      link: "https://example.com/project4"
+      link: ""
     },
     {
       id: 5,
       image: "https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3",
-      link: "https://example.com/project5"
+      link: ""
     },
     {
       id: 6,
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2372&auto=format&fit=crop&ixlib=rb-4.0.3",
-      link: "https://example.com/project6"
+      link: ""
     },
   ];
 
@@ -73,11 +73,8 @@ const Portfolio = () => {
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {portfolioItems.map((item) => (
-          <a 
+          <div
             key={item.id} 
-            href={item.link} 
-            target="_blank" 
-            rel="noopener noreferrer"
             className="min-w-[300px] h-[200px] md:min-w-[450px] md:h-[300px] lg:min-w-[600px] lg:h-[400px] xl:min-w-[800px] xl:h-[500px] relative overflow-hidden rounded-lg group"
           >
             <img 
@@ -86,11 +83,9 @@ const Portfolio = () => {
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-white/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <div className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-[#2E81CC] flex items-center justify-center">
-                <span className="text-white text-2xl md:text-3xl lg:text-4xl">→</span>
-              </div>
+             
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </section>
