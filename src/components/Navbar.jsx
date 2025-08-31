@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <nav className="text-black max-md:text-black z-100 absolute w-full top-0 left-0 right-0">
-      <div className="md:backdrop-filter md:bg-white p-1 shadow-lg z-50 md:w-[95%] md:mx-auto md:mt-10 md:rounded-2xl mx-auto top-0 left-0 right-0 max-md:bg-white max-md:px-4">
+      <div className="md:backdrop-filter md:bg-white p-1  z-50 md:w-[95%] md:mx-auto md:mt-10 md:rounded-2xl mx-auto top-0 left-0 right-0 max-md:bg-white max-md:px-4">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo and Logo Name */}
           <div className="flex items-center space-x-2 max-md:bg-transparent rounded-full p-2">
