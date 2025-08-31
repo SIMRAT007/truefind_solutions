@@ -4,27 +4,27 @@ const Contact = () => {
   return (
     <>
       <section
-        className="relative z-10 py-5 lg:py-[120px] container mx-auto text-white max-md:px-10"
+        className="relative z-10 py-5 lg:py-[120px] container mx-auto text-black bg-white max-md:px-10"
         id="contacts"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <span className="mb-4 inline-flex items-center gap-2 px-3 py-1 text-sm rounded-full text-[#2E81CC] bg-[#1a1a28]">
+                <span className="mb-4 inline-flex items-center gap-2 px-3 py-1 text-sm rounded-full text-[#2E81CC] bg-[#e6f0fa]">
                   <div className="w-2 h-2 bg-[#2E81CC] rounded-full"></div>
                   CONTACT US
                 </span>
-                <h2 className="mb-6 text-[32px] font-bold uppercase text-white sm:text-[40px] lg:text-[36px] xl:text-[40px] leading-tight">
+                <h2 className="mb-6 text-[32px] font-bold uppercase text-black sm:text-[40px] lg:text-[36px] xl:text-[40px] leading-tight">
                   GET IN TOUCH <span className="text-[#2E81CC]">WITH US</span>
                 </h2>
-                <p className="mb-9 text-base leading-relaxed text-gray-300">
+                <p className="mb-9 text-base leading-relaxed text-black">
                   Have a project in mind or just want to say hello? We'd love to
                   hear from you. Our team is ready to answer your questions and
                   discuss how we can help bring your ideas to life.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
-                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-[#e6f0fa] text-[#2E81CC] sm:h-[70px] sm:max-w-[70px]">
                     <svg
                       width="32"
                       height="32"
@@ -39,10 +39,10 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-black">
                       Our Location
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-black">
                       4803 87 St NW, Edmonton, AB <br />
                       T6E 0V3
                     </p>
@@ -50,7 +50,7 @@ const Contact = () => {
                 </div>
 
                 <div className="mb-8 flex w-full max-w-[370px]">
-                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-[#e6f0fa] text-[#2E81CC] sm:h-[70px] sm:max-w-[70px]">
                     <svg
                       width="32"
                       height="32"
@@ -80,7 +80,7 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-balck">
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6 transition duration-200 hover:scale-105 hover:text-[#2E81CC] cursor-pointer">
@@ -90,7 +90,7 @@ const Contact = () => {
                 </div>
 
                 <div className="mb-8 flex w-full max-w-[370px]">
-                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                  <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-[#e6f0fa] text-[#2E81CC] sm:h-[70px] sm:max-w-[70px]">
                     <svg
                       width="32"
                       height="32"
@@ -105,7 +105,7 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-black">
                       Email Address
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6 transition duration-200 hover:scale-105 hover:text-[#2E81CC] cursor-pointer">
@@ -116,14 +116,14 @@ const Contact = () => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative rounded-lg bg-[#1a1a28] p-8 shadow-lg sm:p-12 border border-gray-700">
+              <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12 border border-gray-200">
                 <form>
                   <div className="mb-6">
                     <input
                       type="text"
                       placeholder="Your Name"
                       name="name"
-                      className="w-full rounded border border-gray-600 bg-[#0d0d14] px-[14px] py-3 text-base text-white outline-none focus:border-[#2E81CC]"
+                      className="w-full rounded border border-gray-300 bg-white px-[14px] py-3 text-base text-black outline-none focus:border-[#2E81CC]"
                     />
                   </div>
                   <div className="mb-6">
@@ -131,7 +131,7 @@ const Contact = () => {
                       type="email"
                       placeholder="Your Email"
                       name="email"
-                      className="w-full rounded border border-gray-600 bg-[#0d0d14] px-[14px] py-3 text-base text-white outline-none focus:border-[#2E81CC]"
+                      className="w-full rounded border border-gray-300 bg-white px-[14px] py-3 text-base text-black outline-none focus:border-[#2E81CC]"
                     />
                   </div>
                   <div className="mb-6">
@@ -139,7 +139,7 @@ const Contact = () => {
                       type="text"
                       placeholder="Your Phone"
                       name="phone"
-                      className="w-full rounded border border-gray-600 bg-[#0d0d14] px-[14px] py-3 text-base text-white outline-none focus:border-[#2E81CC]"
+                      className="w-full rounded border border-gray-300 bg-white px-[14px] py-3 text-base text-black outline-none focus:border-[#2E81CC]"
                     />
                   </div>
                   <div className="mb-6">
@@ -147,13 +147,13 @@ const Contact = () => {
                       rows="6"
                       placeholder="Your Message"
                       name="message"
-                      className="w-full resize-none rounded border border-gray-600 bg-[#0d0d14] px-[14px] py-3 text-base text-white outline-none focus:border-[#2E81CC]"
+                      className="w-full resize-none rounded border border-gray-300 bg-white px-[14px] py-3 text-base text-black outline-none focus:border-[#2E81CC]"
                     ></textarea>
                   </div>
                   <div>
                     <button
                       type="submit"
-                      className="w-full rounded bg-[#2E81CC] px-6 py-3 text-white transition hover:bg-[#2569a3]"
+                      className="w-full rounded bg-[#2E81CC] px-6 py-3 text-white font-semibold transition hover:bg-[#2569a3] shadow-md hover:shadow-lg"
                     >
                       Send Message
                     </button>

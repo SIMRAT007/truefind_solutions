@@ -19,7 +19,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#0E0E11] text-white px-8 py-12 overflow-hidden border-t-3 border-gray-800">
+  <footer className="relative bg-white text-black px-8 py-12 overflow-hidden border-t-3 border-gray-200">
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 ">
@@ -60,16 +60,16 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between text-sm text-gray-400 z-10 relative">
+  <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between text-sm text-gray-500 z-10 relative">
           <span>Copyright by @TrueFind Solutions</span>
-          <a onClick={() => scrollToSection('terms')} className="cursor-pointer hover:text-[#2E81CC] mt-2 md:mt-0">Terms & Condition Applied</a>
+          <a onClick={() => scrollToSection('terms')} className="cursor-pointer hover:text-[#2E81CC] mt-2 md:mt-0">*Terms & Condition Applied</a>
         </div>
       </div>
 
       {/* Digital Agency Background Text */}
-      <h1 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-10 text-[250px] leading-none font-black text-white opacity-[0.02] z-0 pointer-events-none select-none whitespace-nowrap">
-      Digital Agency
-      </h1>
+  <h1 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-10 text-[250px] leading-none font-black text-gray-400 opacity-[0.12] z-0 pointer-events-none select-none whitespace-nowrap">
+  Digital Agency
+  </h1>
     </footer>
   );
 }

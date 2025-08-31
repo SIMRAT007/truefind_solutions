@@ -33,7 +33,7 @@ export default function ValuesSection() {
   }, [isDialogOpen]);
 
   return (
-    <div className="text-white px-6 md:px-10 py-16 max-md:py-0 max-md:mb-20 flex flex-col lg:flex-row items-center justify-between gap-16 container mx-auto max-md:mt-20">
+    <div className="text-black bg-white px-6 md:px-10 py-16 max-md:py-0 max-md:mb-20 flex flex-col lg:flex-row items-center justify-between gap-16 container mx-auto max-md:mt-20">
       {/* Left Section */}
       <div className="flex-1">
         <div className="mb-6">
@@ -42,17 +42,17 @@ export default function ValuesSection() {
             Why Choose Us?
           </span>
         </div>
-        <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+        <h2 className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-black">
           Principles that drive<br />performance
         </h2>
-        <p className="text-gray-300 text-lg mb-10 max-w-lg leading-relaxed">
+        <p className="text-black text-lg mb-10 max-w-lg leading-relaxed">
           Empowering brands with innovative designs and tailored strategies to thrive and grow in the ever-evolving digital landscape.
         </p>
 
         {/* Grid Values */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-base md:text-lg text-gray-200">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-base md:text-lg text-black">
           {values.map((val, index) => (
-            <div key={index} className="flex items-center p-4 bg-[#252530]/50 rounded-xl transition-all duration-300 hover:bg-[#2E81CC]/10 hover:shadow-lg hover:transform hover:-translate-y-1">
+            <div key={index} className="flex items-center p-4 bg-[#e6f0fa] rounded-xl transition-all duration-300 hover:bg-[#2E81CC]/10 hover:shadow-lg hover:transform hover:-translate-y-1">
               <span className="text-[#2E81CC] mr-3 text-xl">✔</span>
               <span className="font-medium">{val}</span>
             </div>
@@ -123,22 +123,22 @@ export default function ValuesSection() {
 
       {/* Company Info Dialog */}
       {isDialogOpen && (
-        <div className="fixed inset-0 bg-black/80 backdrop-blur-md flex items-center justify-center z-50 p-4">
+        <div className="fixed inset-0 bg-black/30 backdrop-blur-md flex items-center justify-center z-50 p-4">
           <div 
-            className="bg-gradient-to-b from-[#252530] to-[#1a1a1f] rounded-3xl p-10 max-w-4xl w-full relative text-left shadow-2xl max-h-[90vh] overflow-y-auto"
-            style={{boxShadow: "0 0 40px rgba(46, 129, 204, 0.15)"}}
+            className="bg-white rounded-3xl p-10 max-w-4xl w-full relative text-left shadow-2xl max-h-[90vh] overflow-y-auto"
+            style={{boxShadow: "0 0 40px rgba(46, 129, 204, 0.10)"}}
           >
             <button
-              className="absolute top-6 right-6 text-white text-xl bg-white/10 w-10 h-10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors cursor-pointer"
+              className="absolute top-6 right-6 text-black text-xl bg-gray-100 w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors cursor-pointer"
               onClick={() => setIsDialogOpen(false)}
             >
               ✕
             </button>
             
-            <h2 className="text-3xl font-bold mb-3">About Truefind Solutions</h2>
+            <h2 className="text-3xl font-bold mb-3 text-black">About Truefind Solutions</h2>
             <div className="w-full h-1 bg-gradient-to-r from-[#2E81CC] to-transparent mb-8 rounded-full" />
             
-            <div className="space-y-6 text-gray-300">
+            <div className="space-y-6 text-black">
               <p>
                 Truefind Solutions understands that any organisation's use of technology is inter-reliant.
                 From your laptops and desktops, via your network and server and through to your telephony and Internet connection, all are linked and a problem in one can quickly affect the others.
@@ -148,7 +148,7 @@ export default function ValuesSection() {
                 That is why we have designed our services to ensure that when you deal with Truefind Solutions you know that one call to us will solve your technology problems without the need to go chasing multiple suppliers.
               </p>
               
-              <h3 className="text-xl font-bold text-white mt-8 mb-2">Offering the Complete Technology Service</h3>
+              <h3 className="text-xl font-bold text-[#2E81CC] mt-8 mb-2">Offering the Complete Technology Service</h3>
               <p>
                 Our services can be customised to meet any organisation's technology requirements. From offering a total outsourcing service, where we effectively act as your IT department, through to providing highly specialised skills to help with a discrete project or task, Truefind Solutions can help.
               </p>
@@ -157,7 +157,7 @@ export default function ValuesSection() {
                 By being a managed service provider we can hand-hold your organisation at every step. From initial technology selection, through to configuration, setup and installation and finally looking after the necessary ongoing support. Such an approach leaves you free to get on with running your business, whilst we take care of all your technology requirements.
               </p>
               
-              <h3 className="text-xl font-bold text-white mt-8 mb-2">Personalised Support Service</h3>
+              <h3 className="text-xl font-bold text-[#2E81CC] mt-8 mb-2">Personalised Support Service</h3>
               <p>
                 When you partner with Truefind Solutions for your technology support, we guarantee that you will always speak to a person when you ring up with a problem. We do not believe in providing self-service DIY Web portals as we know that you want us to deal with the problem for you, not have to do-it-yourself.
               </p>
@@ -166,7 +166,7 @@ export default function ValuesSection() {
                 Our highly skilled and accredited staff will take your call and resolve your problem in line with your Service Level Agreement, ensuring minimum down time and loss of productivity.
               </p>
               
-              <h3 className="text-xl font-bold text-white mt-8 mb-2">Accreditations</h3>
+              <h3 className="text-xl font-bold text-[#2E81CC] mt-8 mb-2">Accreditations</h3>
               <p>
                 We have partnered with the leading technology companies so that we can offer our customers cost-effective and leading edge solutions that are designed to match their budget and any existing internal resource.
               </p>
@@ -175,7 +175,7 @@ export default function ValuesSection() {
                 The stringent requirements that we have to meet to obtain these accreditations are your guarantee that our staff are fully trained and accredited to exacting standards.
               </p>
               
-              <h3 className="text-xl font-bold text-white mt-8 mb-2">Our Staff</h3>
+              <h3 className="text-xl font-bold text-[#2E81CC] mt-8 mb-2">Our Staff</h3>
               <p>
                 We know that our staff are our greatest asset. That is why we employ trained and accredited professionals who know how to implement the solutions and services we provide in real world situations. Importantly, they must be able to explain highly technical solutions in a non-technical way.
               </p>

@@ -10,11 +10,11 @@ import logo6 from "../assets/companies/C6.jpeg"
 const clients = () => {
     return (
         <>
-            <section className="py-24 max-md:py-5 bg-[#0d0d10]">
+            <section className="py-24 max-md:py-5 bg-white">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="mb-20 text-center">
                         <span className="text-[#2E81CC] text-center font-medium mb-4 block">OUR PARTNERS</span>
-                        <h1 className="text-4xl text-gray-300 text-center font-bold">We work with the best partners</h1>
+                        <h1 className="text-4xl text-black text-center font-bold">We work with the best partners</h1>
                     </div>
                     
                     {/* Logo container - displaying logos in a row */}

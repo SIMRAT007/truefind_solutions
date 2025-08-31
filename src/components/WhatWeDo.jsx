@@ -66,7 +66,7 @@ export default function WhatWeDoSection() {
 	}, []);
 
 	return (
-		<div className="my-40 max-md:my-10 bg-[#0d0d10] text-white flex flex-col lg:flex-row items-center justify-center max-md:px-10 gap-10 container mx-auto max-md:mt-40">
+		<div className="my-40 max-md:my-10 bg-white text-black flex flex-col lg:flex-row items-center justify-center max-md:px-10 gap-10 container mx-auto max-md:mt-40">
 			{/* Left: Image */}
 			<div className="relative w-full lg:w-1/2 flex justify-center items-center py-10">
 				{/* Repositioned Abstract Elements - Clearly visible around the image */}
@@ -108,7 +108,7 @@ export default function WhatWeDoSection() {
 					/>
 
 					{/* Image Overlay */}
-					<div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-90"></div>
+					<div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
 
 					{/* Corner Decoration - On top of image corners */}
 					<div className="absolute -bottom-4 -right-4 w-12 h-12 bg-[#2E81CC] rounded-full shadow-lg z-20"></div>
@@ -131,14 +131,14 @@ export default function WhatWeDoSection() {
 
 			{/* Right: Services */}
 			<div className="w-full lg:w-1/2 max-md:mt-10">
-				<div className="inline-flex items-center gap-2 px-3 py-1 text-sm rounded-full text-gray-500 mb-10 bg-[#1a1a28]">
+				<div className="inline-flex items-center gap-2 px-3 py-1 text-sm rounded-full text-[#2E81CC] mb-10 bg-[#e6f0fa]">
 					<div className="w-3 h-3 bg-[#2E81CC] rounded-full animate-pulse"></div>
 					WHAT WE DO
 				</div>
 				{services.map((service, idx) => (
-					<div key={idx} className="mb-4 border-b border-gray-700 pb-4">
+					<div key={idx} className="mb-4 border-b border-gray-200 pb-4">
 						<button
-							className="flex items-center justify-between w-full text-left text-4xl font-semibold transition-all duration-300"
+							className="flex items-center justify-between w-full text-left text-4xl font-semibold transition-all duration-300 text-black"
 							onClick={() => toggleIndex(idx)}
 						>
 							{service.title}
@@ -157,7 +157,7 @@ export default function WhatWeDoSection() {
 									: "max-h-0 opacity-0"
 							}`}
 						>
-							<p className="text-gray-400 mt-2 text-base">
+							<p className="text-black mt-2 text-base">
 								{service.description}
 								<button
 									onClick={(e) => {
@@ -179,35 +179,27 @@ export default function WhatWeDoSection() {
 				<div className="fixed inset-0 z-50 flex items-center justify-center p-4">
 					{/* Background Overlay with Blur */}
 					<div
-						className="absolute inset-0 bg-black/70 backdrop-blur-sm"
+						className="absolute inset-0 bg-black/30 backdrop-blur-sm"
 						onClick={closeModal}
 					></div>
 
 					{/* Modal Content */}
-					<div className="relative bg-[#1a1a28] rounded-xl shadow-xl max-w-2xl w-full max-h-[80vh] overflow-y-auto z-50">
-						<div className="sticky top-0 bg-[#1a1a28] p-5 border-b border-gray-700 flex justify-between items-center">
-							<h3 className="text-2xl font-bold text-white">
+					<div className="relative bg-white rounded-xl shadow-xl max-w-2xl w-full max-h-[80vh] overflow-y-auto z-50">
+						<div className="sticky top-0 bg-white p-5 border-b border-gray-200 flex justify-between items-center">
+							<h3 className="text-2xl font-bold text-black">
 								{modalContent?.title}
 							</h3>
 							<button
 								onClick={closeModal}
-								className="text-gray-400 hover:text-white transition-colors text-2xl"
+								className="text-gray-400 hover:text-black transition-colors text-2xl"
 							>
 								&times;
 							</button>
 						</div>
 						<div className="p-5">
-							<p className="text-gray-300 leading-relaxed">
+							<p className="text-black leading-relaxed">
 								{modalContent?.content}
 							</p>
-						</div>
-						<div className="sticky bottom-0 bg-[#1a1a28] p-5 border-t border-gray-700 flex justify-end">
-							<button
-								onClick={closeModal}
-								className="px-4 py-2 bg-[#2E81CC] hover:bg-[#1d5fa3] text-white rounded-lg transition-colors"
-							>
-								Close
-							</button>
 						</div>
 					</div>
 				</div>

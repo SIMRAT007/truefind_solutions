@@ -10,56 +10,37 @@ const HeroSection = () => {
 
     return (
         <>
-            <section className="lg:pt-40 pt-0 lg:p-0 h-full mt-0 relative" id='home'>
-                {/* Background Video */}
-                <video
-                    className="absolute top-0 left-0 w-full h-full z-0 object-cover pointer-events-none"
-                    src={backgroundVideo}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    webkit-playsinline="true"
-                ></video>
-
-                {/* Overlay - Increased opacity and ensured complete coverage */}
-                <div
-                    className="absolute inset-0 w-full h-full z-10 bg-black"
-                    style={{ opacity: 0.8 }}
-                ></div>
-
+            <section className="lg:pt-40 pt-0 lg:p-0 h-full mt-0 relative bg-white" id='home'>
+                {/* Removed background video and overlay for white background */}
                 <div className="relative py-10 overflow-hidden m-10 lg:m-0 2xl:py-16 xl:py-8 lg:rounded-tl-2xl lg:rounded-bl-2xl">
                     {/* Content Overlay */}
                     <div className="relative z-10 mx-auto md:w-[90%] px-4 sm:px-6 lg:px-4">
                         <div className="grid grid-cols-1 gap-14 items-center lg:grid-cols-10 lg:gap-2">
                             {/* Content Part */}
                             <div className="w-full xl:col-span-5 lg:col-span-6 2xl:-mx-5 xl:-mx-0 max-md:mt-10">
-                                <div className="flex items-center text-sm font-medium text-gray-500 justify-center lg:justify-start">
+                                <div className="flex items-center text-sm font-medium text-black justify-center lg:justify-start">
                                     <span className="bg-[#2E81CC] py-1 px-3 rounded-2xl text-xs font-medium text-white mr-3">#1</span>
                                     Your Marketing Partner
                                 </div>
                                 <h1
-                                    className="py-8 text-center text-gray-900 font-bold font-manrope md:text-8xl text-6xl lg:text-left leading-[70px] text-white"
+                                    className="py-8 text-center text-black font-bold font-manrope md:text-8xl text-6xl lg:text-left leading-[70px]"
                                     style={{
-                                        lineHeight: "1",
-                                        background: "linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))",
-                                        WebkitBackgroundClip: "text",
-                                        WebkitTextFillColor: "transparent",
+                                        lineHeight: "1"
                                     }}
                                 >
                                     Transform your business vision into digital{" "}
                                     <span
                                         className="text-[#2E81CC]"
                                         style={{
-                                            background: "none", // Remove gradient effect
-                                            WebkitBackgroundClip: "unset", // Reset background clip
-                                            WebkitTextFillColor: "#2E81CC", // Apply red color explicitly
+                                            background: "none",
+                                            WebkitBackgroundClip: "unset",
+                                            WebkitTextFillColor: "#2E81CC",
                                         }}
                                     >
                                         excellence
                                     </span>
                                 </h1>
-                                <p className="text-gray-500 text-xl text-center lg:text-left">
+                                <p className="text-black text-xl text-center lg:text-left">
                                     Empowering brands with innovative designs and tailored business strategies to thrive and grow in the ever-evolving digital landscape.
                                 </p>
 
@@ -90,7 +71,7 @@ const HeroSection = () => {
                                             className="border-2 border-solid border-indigo-50 rounded-full relative z-20 -ml-3 object-cover"
                                         />
                                     </div>
-                                    <span className="mt-0 max-md:mt-5 text-base text-gray-600 font-medium lg:ml-3">
+                                    <span className="mt-0 max-md:mt-5 text-base text-black font-medium lg:ml-3">
                                         500+ Positive Reviews
                                     </span>
                                 </div>

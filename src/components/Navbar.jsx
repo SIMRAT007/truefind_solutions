@@ -46,7 +46,7 @@ const Navbar = () => {
             <li>
             <a
                 onClick={() => scrollToSection('home')}
-                className={`hover:text-red-600 cursor-pointer ${location.hash === '#home' ? 'text-red-600' : 'text-black'}`}
+                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#home' ? 'text-[#2E81CC]' : 'text-black'}`}
               >
                 Home
               </a>
@@ -54,7 +54,7 @@ const Navbar = () => {
             <li>
               <a
                 onClick={() => scrollToSection('about')}
-                className={`hover:text-red-600 cursor-pointer ${location.hash === '#about' ? 'text-red-600' : 'text-black'}`}
+                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#about' ? 'text-[#2E81CC]' : 'text-black'}`}
               >
                 About Us
               </a>
@@ -62,7 +62,7 @@ const Navbar = () => {
             <li>
               <a
                 onClick={() => scrollToSection('portfolio')}
-                className={`hover:text-red-600 cursor-pointer ${location.hash === '#portfolio' ? 'text-red-600' : 'text-black'}`}
+                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#portfolio' ? 'text-[#2E81CC]' : 'text-black'}`}
               >
                 Portfolio
               </a>
@@ -70,7 +70,7 @@ const Navbar = () => {
             <li>
               <a
                 onClick={() => scrollToSection('services')}
-                className={`hover:text-red-600 cursor-pointer ${location.hash === '#services' ? 'text-red-600' : 'text-black'}`}
+                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#services' ? 'text-[#2E81CC]' : 'text-black'}`}
               >
                 Services
               </a>
@@ -175,9 +175,9 @@ const Navbar = () => {
             {/* <NavLink to="/contact" onClick={handleCloseMenu}> */}
             <a
                 onClick={() => scrollToSection('contacts')}
-                className={`hover:text-red-600 cursor-pointer ${location.hash === '#contacts' ? 'text-red-600' : 'text-black'}`}
+                className={`hover:text-[#2E81CC] cursor-pointer ${location.hash === '#contacts' ? 'text-[#2E81CC]' : 'text-black'}`}
               >
-              <button className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">
+              <button className="bg-[#2E81CC] text-white px-4 py-2 rounded hover:bg-[#2569a3]">
                 Contact Us
               </button>
             </a>

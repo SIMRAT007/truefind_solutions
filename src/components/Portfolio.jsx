@@ -54,15 +54,15 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <section className="bg-[#0d0d14] text-white px-4 py-16 md:px-16 lg:px-32 overflow-hidden" id="portfolio">
+  <section className="bg-white text-black px-4 py-16 md:px-16 lg:px-32 overflow-hidden" id="portfolio">
       {/* Tag */}
-      <div className="inline-flex items-center bg-[#1a1a28] text-gray-500 text-sm font-semibold px-4 py-1 rounded-full mb-6">
+      <div className="inline-flex items-center bg-[#e6f0fa] text-[#2E81CC] text-sm font-semibold px-4 py-1 rounded-full mb-6">
         <span className="w-3 h-3 bg-[#2E81CC] rounded-full mr-2 animate-pulse"></span>
         PORTFOLIO
       </div>
 
       {/* Headline */}
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-10 max-w-5xl">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-10 max-w-5xl text-black">
         Creative projects that speak for themselves
       </h2>
 
@@ -85,9 +85,9 @@ const Portfolio = () => {
               alt={`Portfolio item ${item.id}`} 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-[#0D0D14]/60 opacity-0 group-hover:opacity-600 transition-opacity duration-300 flex items-center justify-center">
-              <div className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-white flex items-center justify-center">
-                <span className="text-[#0D0D14] text-2xl md:text-3xl lg:text-4xl">→</span>
+            <div className="absolute inset-0 bg-white/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <div className="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-[#2E81CC] flex items-center justify-center">
+                <span className="text-white text-2xl md:text-3xl lg:text-4xl">→</span>
               </div>
             </div>
           </a>
