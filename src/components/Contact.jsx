@@ -1,6 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
+  const [result, setResult] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setResult("Sending....");
+
+    const formData = new FormData(e.target);
+    formData.append("access_key", "40e837fa-a1de-42fd-969b-841c6d8894df");
+    
+    // Add auto-response configuration
+    formData.append("from_name", "Truefind Solutions");
+    formData.append("subject", "New Form Submission - Truefind Solutions");
+    formData.append("reply_to", "info@truefindsolutions.com");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        setShowSuccess(true);
+        e.target.reset();
+        
+        // Hide success message after 3 seconds
+        setTimeout(() => {
+          setShowSuccess(false);
+        }, 3000);
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
+    } catch (error) {
+      console.log("Error", error);
+      setResult("Something went wrong!");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <>
       <section
@@ -117,12 +162,13 @@ const Contact = () => {
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12 border border-gray-200">
-                <form>
+                <form onSubmit={handleSubmit}>
                   <div className="mb-6">
                     <input
                       type="text"
                       placeholder="Your Name"
                       name="name"
+                      required
                       className="w-full rounded border border-gray-300 bg-white px-[14px] py-3 text-base text-black outline-none focus:border-[#2E81CC]"
                     />
                   </div>
@@ -131,6 +177,7 @@ const Contact = () => {
                       type="email"
                       placeholder="Your Email"
                       name="email"
+                      required
                       className="w-full rounded border border-gray-300 bg-white px-[14px] py-3 text-base text-black outline-none focus:border-[#2E81CC]"
                     />
                   </div>
@@ -139,6 +186,7 @@ const Contact = () => {
                       type="text"
                       placeholder="Your Phone"
                       name="phone"
+                      required
                       className="w-full rounded border border-gray-300 bg-white px-[14px] py-3 text-base text-black outline-none focus:border-[#2E81CC]"
                     />
                   </div>
@@ -147,16 +195,43 @@ const Contact = () => {
                       rows="6"
                       placeholder="Your Message"
                       name="message"
+                      required
                       className="w-full resize-none rounded border border-gray-300 bg-white px-[14px] py-3 text-base text-black outline-none focus:border-[#2E81CC]"
                     ></textarea>
                   </div>
-                  <div>
+                  <div className="relative">
                     <button
                       type="submit"
-                      className="w-full rounded bg-[#2E81CC] px-6 py-3 text-white font-semibold transition hover:bg-[#2569a3] shadow-md hover:shadow-lg"
+                      disabled={isSubmitting}
+                      className={`w-full rounded px-6 py-3 text-white font-semibold transition shadow-md hover:shadow-lg ${
+                        isSubmitting ? 'bg-[#2569a3] cursor-not-allowed' : 'bg-[#2E81CC] hover:bg-[#2569a3]'
+                      }`}
                     >
-                      Send Message
+                      {isSubmitting ? 'Sending...' : 'Send Message'}
                     </button>
+                    
+                    {/* Success Animation */}
+                    {showSuccess && (
+                      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-white bg-opacity-90 rounded transition-all duration-300">
+                        <div className="flex items-center gap-2">
+                          <svg
+                            className="w-6 h-6 text-green-500 animate-bounce"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M5 13l4 4L19 7"
+                            ></path>
+                          </svg>
+                          <span className="text-green-500 font-medium">Message sent successfully!</span>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </form>
                 <div>
