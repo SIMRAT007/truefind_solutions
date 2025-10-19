@@ -67,9 +67,9 @@ export default function Footer() {
       </div>
 
       {/* Digital Agency Background Text */}
-  <h1 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-10 text-[250px] leading-none font-black text-gray-400 opacity-[0.12] z-0 pointer-events-none select-none whitespace-nowrap">
+  {/* <h1 className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-10 text-[250px] leading-none font-black text-gray-400 opacity-[0.12] z-0 pointer-events-none select-none whitespace-nowrap">
   Digital Agency
-  </h1>
+  </h1> */}
     </footer>
   );
 }
