@@ -42,7 +42,7 @@ export default function Footer() {
               T6E 0V3
             </p>
             <p className="text-lg flex items-center gap-2 mt-2">
-              📱 +1-780-851-0652 | +44-770-3101-853
+              📱 +1-587-568-6823 | +44-770-3101-853
             </p>
           </div>
 
