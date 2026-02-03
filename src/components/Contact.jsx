@@ -129,7 +129,7 @@ const Contact = () => {
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6 transition duration-200 hover:scale-105 hover:text-[#2E81CC] cursor-pointer">
-                      +1-780-851-0652 | +44-770-3101-853
+                      +1-587-568-6823 | +44-770-3101-853
                     </p>
                   </div>
                 </div>
